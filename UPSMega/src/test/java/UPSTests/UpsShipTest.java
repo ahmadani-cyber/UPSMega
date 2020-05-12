@@ -1,5 +1,7 @@
 package UPSTests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -51,7 +53,7 @@ public void ShippingAccount() {
 		bool = true;
 	}
 	System.out.println("Shipping account test");
-Assert.assertEquals(bool, true);
+AssertJUnit.assertEquals(bool, true);
 }
 
 @Test(priority=1,groups= {"sanity test"})
@@ -60,7 +62,7 @@ public void title()
 System.out.println("Actual page title"+actualtitle);
 String expectedtitle=driver.getTitle();
 System.out.println("Expected page title"+expectedtitle);
-Assert.assertEquals(actualtitle, expectedtitle);
+AssertJUnit.assertEquals(actualtitle, expectedtitle);
 }
 
 
