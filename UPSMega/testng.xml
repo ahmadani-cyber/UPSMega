@@ -3,8 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="UPSTests.UPSLoginTest"/>
-      <class name="UPSTests.UpsShipTest"/>
+      <class name="pack.UpsTest.UpsLoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

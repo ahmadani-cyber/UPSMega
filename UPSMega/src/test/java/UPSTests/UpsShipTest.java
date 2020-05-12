@@ -1,12 +1,10 @@
 package UPSTests;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.AssertJUnit;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,18 +16,18 @@ public class UpsShipTest extends UPSdriver  {
 UpsShipAction loginActions = new UpsShipAction(this.driver);
 final String URL = "https://www.ups.com/ship/guided/origin?tx=1556007685144378&loc=en_US";
 
-@BeforeMethod
+@BeforeMethod(alwaysRun=true)
 public void beforeMethod() {
 	driver.get(URL);
 	//driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 }
 
-@Test(priority=2,groups= {"regression test"})
+@Test(priority=1,groups= {"regression test"})
 public void ShippingAccount() {
-	loginActions.cook();
+	//loginActions.cook();
 
-	loginActions.Origin("United States");
+loginActions.Origin("United States");
 	loginActions.Name("Daniyal");
 	loginActions.firstAddress("52 Flower Road");
 	loginActions.zipcode("11581");
@@ -53,16 +51,16 @@ public void ShippingAccount() {
 		bool = true;
 	}
 	System.out.println("Shipping account test");
-AssertJUnit.assertEquals(bool, true);
+Assert.assertEquals(bool, true);
 }
 
-@Test(priority=1,groups= {"sanity test"})
+@Test(priority=2,groups= {"sanity test"})
 public void title()
 {String actualtitle="Shipping | UPS - United States";
 System.out.println("Actual page title"+actualtitle);
 String expectedtitle=driver.getTitle();
 System.out.println("Expected page title"+expectedtitle);
-AssertJUnit.assertEquals(actualtitle, expectedtitle);
+Assert.assertEquals(actualtitle, expectedtitle);
 }
 
 

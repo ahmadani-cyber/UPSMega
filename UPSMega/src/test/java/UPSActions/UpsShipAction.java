@@ -13,9 +13,9 @@ public UpsShipAction(WebDriver driver) {
 	PageFactory.initElements(driver, webelement);
 }
 
-public void cook() {
-	this.webelement.cookie.click();
-}
+//public void cook() {
+//	this.webelement.cookie.click();
+//}
 
 public void Origin(String str) {
 	this.webelement.origin.sendKeys(str);

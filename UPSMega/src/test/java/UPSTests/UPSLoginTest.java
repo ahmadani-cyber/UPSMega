@@ -1,7 +1,5 @@
 package UPSTests;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -39,7 +37,7 @@ public void logintest() {
 		bool = true;
 	}
 	
-	AssertJUnit.assertEquals(bool, true);
+	Assert.assertEquals(bool, true);
 	
 	System.out.println("login verification test");
 }
@@ -51,7 +49,7 @@ public void logotest() {
 	String expectedlogo = "Login";
     System.out.println("expected login logo:" + expectedlogo);
     
-  AssertJUnit.assertEquals(actuallogo, expectedlogo);  
+  Assert.assertEquals(actuallogo, expectedlogo);  
    
     
 
@@ -62,7 +60,7 @@ public void verifyUpsLoginPageTitle() {
 	String expectedTitle = "Login | UPS - United States";
 	String actualTitle = driver.getTitle();
 	System.out.println("verifyUpsLoginPageTitle() executed");
-	AssertJUnit.assertEquals(actualTitle, expectedTitle);
+	Assert.assertEquals(actualTitle, expectedTitle);
 }
 
 

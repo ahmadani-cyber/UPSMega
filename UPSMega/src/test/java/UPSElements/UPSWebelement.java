@@ -4,14 +4,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class UPSWebelement {
-	@FindBy(xpath="//*[@id=\"__tealiumImplicitmodal\"]/div/button")
-	public WebElement cookie;
+//@FindBy(xpath="//*[@id='__tealiumImplicitmodal\']/div/button")
+//	public WebElement cookie;
 	@FindBy(name="countryDropdown")
 	public WebElement origin;
 
 	
 	@FindBy(xpath="//*[@id='originname\']")
-	public WebElement name;
+public WebElement name;
 	
 	
 	@FindBy(id="originaddress1")
