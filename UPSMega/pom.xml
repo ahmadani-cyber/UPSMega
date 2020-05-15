@@ -1,9 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>UpsShip</groupId>
-	<artifactId>UpsShip</artifactId>
+	<groupId>Feb2020_TDD</groupId>
+	<artifactId>Feb2020_TDD</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<developers>
@@ -44,8 +43,13 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.17</version>
 		</dependency>
-		
-		
+
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<version>1.3</version>
+		</dependency>
+
 
 	</dependencies>
 
@@ -71,9 +75,6 @@
 						<suiteXmlFile>UpsShipTest.xml</suiteXmlFile>
 						<suiteXmlFile>UPSLoginTest.xml</suiteXmlFile>
 						<suiteXmlFile>RegressionTest.xml</suiteXmlFile>
-				
-						<suiteXmlFile>SanityTest.xml</suiteXmlFile>
-
 					</suiteXmlFiles>
 					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>

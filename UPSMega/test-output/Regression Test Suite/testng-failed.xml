@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="RegressionTest(failed)">
+    <groups>
+      <run>
+        <include name="regression test"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="UPSTests.UPSLoginTest">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="logintest"/>
+        </methods>
+      </class> <!-- UPSTests.UPSLoginTest -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+</suite> <!-- Failed suite [Regression Test Suite] -->

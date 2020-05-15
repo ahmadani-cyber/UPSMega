@@ -30,7 +30,7 @@ public class UPSdriver {
 	}
 
 	public WebDriver getFirefoxDriver() {
-	System.setProperty("webdriver.firefox.driver", "geckodriver.exe");
+	System.setProperty("webdriver.firefox.driver", "geckodriver");
 		WebDriver driver = new FirefoxDriver();
 	return driver;
 	}

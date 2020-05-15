@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-14T10:59:52Z" name="Regression Test Suite" finished-at="2020-05-14T11:00:13Z" duration-ms="20670">
+    <groups>
+      <group name="regression test">
+        <method signature="UPSLoginTest.logintest()[pri:3, instance:UPSTests.UPSLoginTest@346a361]" name="logintest" class="UPSTests.UPSLoginTest"/>
+        <method signature="UPSLoginTest.logotest()[pri:1, instance:UPSTests.UPSLoginTest@346a361]" name="logotest" class="UPSTests.UPSLoginTest"/>
+        <method signature="UpsShipTest.ShippingAccount()[pri:1, instance:UPSTests.UpsShipTest@34a75079]" name="ShippingAccount" class="UPSTests.UpsShipTest"/>
+      </group> <!-- regression test -->
+    </groups>
+    <test started-at="2020-05-14T10:59:52Z" name="RegressionTest" finished-at="2020-05-14T11:00:13Z" duration-ms="20670">
+      <class name="UPSTests.UpsShipTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:UPSTests.UpsShipTest@34a75079]" started-at="2020-05-14T10:59:52Z" name="beforeMethod" finished-at="2020-05-14T10:59:56Z" duration-ms="3511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ShippingAccount()[pri:1, instance:UPSTests.UpsShipTest@34a75079]" started-at="2020-05-14T10:59:56Z" name="ShippingAccount" finished-at="2020-05-14T11:00:03Z" duration-ms="7459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShippingAccount -->
+      </class> <!-- UPSTests.UpsShipTest -->
+      <class name="UPSTests.UPSLoginTest">
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:UPSTests.UPSLoginTest@346a361]" started-at="2020-05-14T11:00:03Z" name="beforemethod" finished-at="2020-05-14T11:00:05Z" duration-ms="2422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="logotest()[pri:1, instance:UPSTests.UPSLoginTest@346a361]" started-at="2020-05-14T11:00:05Z" name="logotest" finished-at="2020-05-14T11:00:07Z" duration-ms="1448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logotest -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:UPSTests.UPSLoginTest@346a361]" started-at="2020-05-14T11:00:07Z" name="beforemethod" finished-at="2020-05-14T11:00:08Z" duration-ms="1343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="logintest()[pri:3, instance:UPSTests.UPSLoginTest@346a361]" started-at="2020-05-14T11:00:08Z" name="logintest" finished-at="2020-05-14T11:00:13Z" duration-ms="4404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+      </class> <!-- UPSTests.UPSLoginTest -->
+    </test> <!-- RegressionTest -->
+  </suite> <!-- Regression Test Suite -->
+</testng-results>
